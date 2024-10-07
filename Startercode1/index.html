@@ -6,6 +6,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
     <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
     <style>
         body { margin: 0; padding: 0; }
@@ -20,25 +21,29 @@
     const map = new maplibregl.Map({
         container: 'map',
         style: {
-            "version": 8,
-            "sources": {
-                "pmtiles-source": {
-                    "type": "vector",
-                    "tiles": ["http://localhost:3000/india-latest/{z}/{x}/{y}.pbf"]
-                }
-            },
-            "layers": [{
-                "id": "points",
-                "type": "circle",  // or "fill" or other types based on your tile data
-                "source": "pmtiles-source",
-                "source-layer": "place",  // check your MBTiles source for the correct layer name
-                "paint": {
-						'circle-color': 'blue'
-                }
-            }]
+            version: 8,
+            sources: {},
+            layers: []
         },
-        center: [70, 18], // Starting position [lng, lat]
-        zoom: 2 // Starting zoom level
+        zoom: 13,
+        center: [74.0, 18.5]
+    });
+
+    map.on('load', () => {
+        map.addSource('rpc', {
+            type: 'vector',
+            url:
+                'http://localhost:3000/india-latest'
+        });
+        map.addLayer({
+            'id': 'points',
+            'type': 'circle',
+            'source': 'rpc',
+            'source-layer': 'boundary',
+            'paint': {
+                    'circle-color': 'blue'
+            }
+        });
     });
 </script>
 
