@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add a vector tile source</title>
+    <meta property="og:description" content="Add a vector source to a map." />
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: {
+            "version": 8,
+            "sources": {
+                "pmtiles-source": {
+                    "type": "vector",
+                    "tiles": ["http://localhost:3000/india-latest/{z}/{x}/{y}.pbf"]
+                }
+            },
+            "layers": [{
+                "id": "points",
+                "type": "circle",  // or "fill" or other types based on your tile data
+                "source": "pmtiles-source",
+                "source-layer": "place",  // check your MBTiles source for the correct layer name
+                "paint": {
+						'circle-color': 'blue'
+                }
+            }]
+        },
+        center: [70, 18], // Starting position [lng, lat]
+        zoom: 2 // Starting zoom level
+    });
+</script>
+
+</body>
+</html>
