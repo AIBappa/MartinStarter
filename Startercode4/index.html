@@ -1,5 +1,3 @@
-// This is invoking the india-planetiler.mbtiles file created via PlaneTiler.
-// MBTiles creation: C:\osmmap\PlaneTiler>java -Xmx10g -jar planetiler.jar --download --area=india (Windows CMD)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +19,8 @@
     const map = new maplibregl.Map({
         container: 'map',
         style: './public/styles/style.json', // Load from local style.json file
-        zoom: 1,
-        center: [82.9749984741211, 21.100000381469727]
+        zoom: 14,
+        center: [90.6, 27.2]
     });
 
     map.on('load', () => {
@@ -32,8 +30,6 @@
             map.setLayoutProperty(layer.id, 'visibility', 'visible');
         });
 
-        // Show only the 'landuse' layer
-        //map.setLayoutProperty('landuse', 'visibility', 'visible');
     });
 </script>
 

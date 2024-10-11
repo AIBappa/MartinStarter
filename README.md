@@ -14,3 +14,4 @@ Things yet to observe:
 Log
 - Can see some water bodies and landuse probably figures in there. Perhaps need a style.json file.
 - Can see names, but it still does not look  like a map. Baseline startercode 2
+- Startercode4 refers to .mbtiles map generated from planetiler, but nothing on screen. Where is everyone?

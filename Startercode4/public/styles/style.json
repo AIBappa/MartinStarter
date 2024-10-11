@@ -1,9 +1,9 @@
 {
   "version": 8,
   "sources": {
-      "india-planetiler": {
+      "bhutan9": {
       "type": "vector",
-      "tiles": ["http://localhost:3000/india-planetiler/{z}/{x}/{y}"]
+      "tiles": ["http://localhost:3000/bhutan9/{z}/{x}/{y}"]
     }
   },
   "sprite": "/sprites/ofm_f384/ofm",
@@ -17,7 +17,7 @@
     {
       "id": "landcover-glacier",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landcover",
       "filter": ["==", ["get", "subclass"], "glacier"],
       "paint": {
@@ -28,7 +28,7 @@
     {
       "id": "landuse-residential",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": [
         "match",
@@ -52,7 +52,7 @@
     {
       "id": "landuse-suburb",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "maxzoom": 10,
       "filter": ["==", ["get", "class"], "suburb"],
@@ -71,7 +71,7 @@
     {
       "id": "landuse-commercial",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": [
         "all",
@@ -83,7 +83,7 @@
     {
       "id": "landuse-industrial",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": [
         "all",
@@ -101,7 +101,7 @@
     {
       "id": "landuse-cemetery",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": ["==", ["get", "class"], "cemetery"],
       "paint": {"fill-color": "#e0e4dd"}
@@ -109,7 +109,7 @@
     {
       "id": "landuse-hospital",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": ["==", ["get", "class"], "hospital"],
       "paint": {"fill-color": "#fde"}
@@ -117,7 +117,7 @@
     {
       "id": "landuse-school",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": ["==", ["get", "class"], "school"],
       "paint": {"fill-color": "#f0e8f8"}
@@ -125,7 +125,7 @@
     {
       "id": "landuse-railway",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landuse",
       "filter": ["==", ["get", "class"], "railway"],
       "paint": {"fill-color": "hsla(30,19%,90%,0.4)"}
@@ -133,7 +133,7 @@
     {
       "id": "park",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "park",
       "filter": ["==", ["geometry-type"], "Polygon"],
       "paint": {
@@ -152,7 +152,7 @@
     {
       "id": "landcover-wood",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landcover",
       "filter": ["==", ["get", "class"], "wood"],
       "paint": {
@@ -165,7 +165,7 @@
     {
       "id": "landcover-grass",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landcover",
       "filter": ["==", ["get", "class"], "grass"],
       "paint": {"fill-color": "#d8e8c8", "fill-opacity": 1}
@@ -173,7 +173,7 @@
     {
       "id": "landcover-grass-park",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "park",
       "filter": ["==", ["get", "class"], "public_park"],
       "paint": {"fill-color": "#d8e8c8", "fill-opacity": 0.8}
@@ -181,7 +181,7 @@
     {
       "id": "waterway_tunnel",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "minzoom": 14,
       "filter": [
@@ -207,7 +207,7 @@
     {
       "id": "waterway-other",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -231,7 +231,7 @@
     {
       "id": "waterway-other-intermittent",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -256,7 +256,7 @@
     {
       "id": "waterway-stream-canal",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -281,7 +281,7 @@
     {
       "id": "waterway-stream-canal-intermittent",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -307,7 +307,7 @@
     {
       "id": "waterway-river",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -332,7 +332,7 @@
     {
       "id": "waterway-river-intermittent",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "filter": [
         "all",
@@ -358,7 +358,7 @@
     {
       "id": "water",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "water",
       "filter": [
         "all",
@@ -370,7 +370,7 @@
     {
       "id": "water-intermittent",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "water",
       "filter": ["==", ["get", "intermittent"], 1],
       "paint": {"fill-color": "hsl(210,67%,85%)", "fill-opacity": 0.7}
@@ -378,7 +378,7 @@
     {
       "id": "landcover-ice-shelf",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landcover",
       "filter": ["==", ["get", "subclass"], "ice_shelf"],
       "paint": {
@@ -389,7 +389,7 @@
     {
       "id": "landcover-sand",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "landcover",
       "filter": ["==", ["get", "class"], "sand"],
       "paint": {"fill-color": "rgba(245, 238, 188, 1)", "fill-opacity": 1}
@@ -397,7 +397,7 @@
     {
       "id": "building",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "building",
       "paint": {
         "fill-antialias": true,
@@ -415,7 +415,7 @@
     {
       "id": "building-top",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "building",
       "paint": {
         "fill-color": "#f2eae2",
@@ -435,7 +435,7 @@
     {
       "id": "tunnel-service-track-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -462,7 +462,7 @@
     {
       "id": "tunnel-motorway-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -492,7 +492,7 @@
     {
       "id": "tunnel-minor-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -522,7 +522,7 @@
     {
       "id": "tunnel-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -559,7 +559,7 @@
     {
       "id": "tunnel-secondary-tertiary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -586,7 +586,7 @@
     {
       "id": "tunnel-trunk-primary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -615,7 +615,7 @@
     {
       "id": "tunnel-motorway-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -645,7 +645,7 @@
     {
       "id": "tunnel-path",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -670,7 +670,7 @@
     {
       "id": "tunnel-motorway-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -699,7 +699,7 @@
     {
       "id": "tunnel-service-track",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -725,7 +725,7 @@
     {
       "id": "tunnel-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -760,7 +760,7 @@
     {
       "id": "tunnel-minor",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -787,7 +787,7 @@
     {
       "id": "tunnel-secondary-tertiary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -814,7 +814,7 @@
     {
       "id": "tunnel-trunk-primary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -841,7 +841,7 @@
     {
       "id": "tunnel-motorway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -868,7 +868,7 @@
     {
       "id": "tunnel-railway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -894,7 +894,7 @@
     {
       "id": "ferry",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": ["match", ["get", "class"], ["ferry"], true, false],
       "layout": {"line-join": "round"},
@@ -907,7 +907,7 @@
     {
       "id": "aeroway-taxiway-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aeroway",
       "minzoom": 12,
       "filter": ["match", ["get", "class"], ["taxiway"], true, false],
@@ -929,7 +929,7 @@
     {
       "id": "aeroway-runway-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aeroway",
       "minzoom": 12,
       "filter": ["match", ["get", "class"], ["runway"], true, false],
@@ -951,7 +951,7 @@
     {
       "id": "aeroway-area",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aeroway",
       "minzoom": 4,
       "filter": [
@@ -967,7 +967,7 @@
     {
       "id": "aeroway-taxiway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aeroway",
       "minzoom": 4,
       "filter": [
@@ -993,7 +993,7 @@
     {
       "id": "aeroway-runway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aeroway",
       "minzoom": 4,
       "filter": [
@@ -1019,7 +1019,7 @@
     {
       "id": "road_area_pier",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1031,7 +1031,7 @@
     {
       "id": "road_pier",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1055,7 +1055,7 @@
     {
       "id": "highway-area",
       "type": "fill",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1072,7 +1072,7 @@
     {
       "id": "highway-motorway-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1102,7 +1102,7 @@
     {
       "id": "highway-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 13,
       "filter": [
@@ -1139,7 +1139,7 @@
     {
       "id": "highway-minor-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1169,7 +1169,7 @@
     {
       "id": "highway-secondary-tertiary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1195,7 +1195,7 @@
     {
       "id": "highway-primary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 5,
       "filter": [
@@ -1226,7 +1226,7 @@
     {
       "id": "highway-trunk-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 5,
       "filter": [
@@ -1257,7 +1257,7 @@
     {
       "id": "highway-motorway-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 4,
       "filter": [
@@ -1290,7 +1290,7 @@
     {
       "id": "highway-path",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1315,7 +1315,7 @@
     {
       "id": "highway-motorway-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 12,
       "filter": [
@@ -1345,7 +1345,7 @@
     {
       "id": "highway-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 13,
       "filter": [
@@ -1381,7 +1381,7 @@
     {
       "id": "highway-minor",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1409,7 +1409,7 @@
     {
       "id": "highway-secondary-tertiary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1436,7 +1436,7 @@
     {
       "id": "highway-primary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1464,7 +1464,7 @@
     {
       "id": "highway-trunk",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1492,7 +1492,7 @@
     {
       "id": "highway-motorway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 5,
       "filter": [
@@ -1521,7 +1521,7 @@
     {
       "id": "railway-transit",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1545,7 +1545,7 @@
     {
       "id": "railway-transit-hatching",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1572,7 +1572,7 @@
     {
       "id": "railway-service",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1596,7 +1596,7 @@
     {
       "id": "railway-service-hatching",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1623,7 +1623,7 @@
     {
       "id": "railway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1650,7 +1650,7 @@
     {
       "id": "railway-hatching",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1678,7 +1678,7 @@
     {
       "id": "bridge-motorway-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1708,7 +1708,7 @@
     {
       "id": "bridge-link-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1744,7 +1744,7 @@
     {
       "id": "bridge-secondary-tertiary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1774,7 +1774,7 @@
     {
       "id": "bridge-trunk-primary-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1803,7 +1803,7 @@
     {
       "id": "bridge-motorway-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1832,7 +1832,7 @@
     {
       "id": "bridge-minor-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1862,7 +1862,7 @@
     {
       "id": "bridge-path-casing",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1886,7 +1886,7 @@
     {
       "id": "bridge-path",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1911,7 +1911,7 @@
     {
       "id": "bridge-motorway-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1940,7 +1940,7 @@
     {
       "id": "bridge-link",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -1975,7 +1975,7 @@
     {
       "id": "bridge-minor",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2003,7 +2003,7 @@
     {
       "id": "bridge-secondary-tertiary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2030,7 +2030,7 @@
     {
       "id": "bridge-trunk-primary",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2057,7 +2057,7 @@
     {
       "id": "bridge-motorway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2084,7 +2084,7 @@
     {
       "id": "bridge-railway",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2109,7 +2109,7 @@
     {
       "id": "bridge-railway-hatching",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "filter": [
         "all",
@@ -2135,7 +2135,7 @@
     {
       "id": "cablecar",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 13,
       "filter": ["==", ["get", "subclass"], "cable_car"],
@@ -2148,7 +2148,7 @@
     {
       "id": "cablecar-dash",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 13,
       "filter": ["==", ["get", "subclass"], "cable_car"],
@@ -2162,7 +2162,7 @@
     {
       "id": "boundary_3",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "boundary",
       "minzoom": 5,
       "filter": [
@@ -2182,7 +2182,7 @@
     {
       "id": "boundary_2",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "boundary",
       "filter": [
         "all",
@@ -2201,7 +2201,7 @@
     {
       "id": "boundary_disputed",
       "type": "line",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "boundary",
       "filter": [
         "all",
@@ -2217,7 +2217,7 @@
     {
       "id": "road_oneway",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 15,
       "filter": [
@@ -2253,7 +2253,7 @@
     {
       "id": "road_oneway_opposite",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation",
       "minzoom": 15,
       "filter": [
@@ -2289,7 +2289,7 @@
     {
       "id": "waterway_line_label",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "waterway",
       "minzoom": 10,
       "filter": ["==", ["geometry-type"], "LineString"],
@@ -2316,7 +2316,7 @@
     {
       "id": "water_name_point_label",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "water_name",
       "filter": ["==", ["geometry-type"], "Point"],
       "layout": {
@@ -2340,7 +2340,7 @@
     {
       "id": "water_name_line_label",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "water_name",
       "filter": ["==", ["geometry-type"], "LineString"],
       "layout": {
@@ -2366,7 +2366,7 @@
     {
       "id": "poi_r20",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "poi",
       "minzoom": 17,
       "filter": [
@@ -2404,7 +2404,7 @@
     {
       "id": "poi_r7",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "poi",
       "minzoom": 16,
       "filter": [
@@ -2443,7 +2443,7 @@
     {
       "id": "poi_r1",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "poi",
       "minzoom": 15,
       "filter": [
@@ -2482,7 +2482,7 @@
     {
       "id": "poi_transit",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "poi",
       "filter": [
         "match",
@@ -2516,7 +2516,7 @@
     {
       "id": "highway-name-path",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 15.5,
       "filter": ["==", ["get", "class"], "path"],
@@ -2541,7 +2541,7 @@
     {
       "id": "highway-name-minor",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 15,
       "filter": [
@@ -2570,7 +2570,7 @@
     {
       "id": "highway-name-major",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 12.2,
       "filter": [
@@ -2601,7 +2601,7 @@
     {
       "id": "highway-shield-non-us",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 8,
       "filter": [
@@ -2631,7 +2631,7 @@
     {
       "id": "highway-shield-us-interstate",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 7,
       "filter": [
@@ -2660,7 +2660,7 @@
     {
       "id": "road_shield_us",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "transportation_name",
       "minzoom": 9,
       "filter": [
@@ -2689,7 +2689,7 @@
     {
       "id": "airport",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "aerodrome_label",
       "minzoom": 10,
       "filter": ["all", ["has", "iata"]],
@@ -2720,7 +2720,7 @@
     {
       "id": "label_other",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 8,
       "filter": [
@@ -2753,7 +2753,7 @@
     {
       "id": "label_village",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 9,
       "filter": ["==", ["get", "class"], "village"],
@@ -2791,7 +2791,7 @@
     {
       "id": "label_town",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 6,
       "filter": ["==", ["get", "class"], "town"],
@@ -2829,7 +2829,7 @@
     {
       "id": "label_state",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 5,
       "maxzoom": 8,
@@ -2857,7 +2857,7 @@
     {
       "id": "label_city",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 3,
       "filter": [
@@ -2902,7 +2902,7 @@
     {
       "id": "label_city_capital",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 3,
       "filter": [
@@ -2947,7 +2947,7 @@
     {
       "id": "label_country_3",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "minzoom": 2,
       "maxzoom": 9,
@@ -2977,7 +2977,7 @@
     {
       "id": "label_country_2",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "maxzoom": 9,
       "filter": [
@@ -3006,7 +3006,7 @@
     {
       "id": "label_country_1",
       "type": "symbol",
-      "source": "india-planetiler",
+      "source": "bhutan9",
       "source-layer": "place",
       "maxzoom": 9,
       "filter": [
