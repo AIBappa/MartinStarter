@@ -1,0 +1,43 @@
+// This is invoking the india-planetiler.mbtiles file created via PlaneTiler.
+// MBTiles creation: C:\osmmap\PlaneTiler>java -Xmx10g -jar planetiler.jar --download --area=india (Windows CMD)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add a vector tile source</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: './public/styles/style.json', // Load from local style.json file
+        zoom: 1,
+        center: [82.9749984741211, 21.100000381469727]
+    });
+
+    map.on('load', () => {
+        // Hide all layers first (optional step) - change visible to none
+        const allLayers = map.getStyle().layers;
+        allLayers.forEach(layer => {
+            map.setLayoutProperty(layer.id, 'visibility', 'visible');
+        });
+
+        // Show only the 'landuse' layer
+        //map.setLayoutProperty('landuse', 'visibility', 'visible');
+    });
+</script>
+
+</body>
+</html>
+
+
